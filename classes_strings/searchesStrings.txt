@@ -1,0 +1,19 @@
+-When to use String, StringBuilder and StringBuffer
+https://www.geeksforgeeks.org/string-vs-stringbuilder-vs-stringbuffer-in-java/
+-String is imutable, so when the variable will/need to maintain constant along the code, you should use this class
+-When the variable need to change and there is no problem in being thread-safe, use StringBuilder because it'll be enough
+-When it does need to change mut multiple threads will use this variable, use StringBuffer because this class is mutable and thead-safe.
+So there are situations that we don't  need to make a thread-safe code... what are they?...
+
+-Why make non-thread-safe code?
+https://stackoverflow.com/questions/4629248/what-is-non-thread-safety-for
+https://stackoverflow.com/questions/234341/should-i-always-make-my-java-code-thread-safe-or-for-performance-reasons-do-it
+For several reasons
+	"Requires more skilled developers
+	Is harder and nsumes more coding efforts
+	Is harder to test and debug
+	Usually has bigger performance cost"
+Basically if you don't need to make a thread-safe code, it's better no to.
+
+
+
